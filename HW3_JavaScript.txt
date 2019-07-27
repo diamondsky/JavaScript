@@ -1,0 +1,48 @@
+<!---Kiana Slimak 02.12.18-->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Java Script Practice 1</title>
+</head>
+
+<body>
+        <script type="text/javascript">
+             var names = ["Abbie", "Gerald", "Gabby", "Matthew", "Maddie", "Hannah", "Jamie", "Timmothy"];
+             var name_count;
+
+             document.write(('The number of names ending in "ie" or "y" is : ') + (e_names(names)));
+
+             function e_names(names) {
+                var name_count = 0;
+                var i = 0;
+                for (var i in names) {
+                    if (names[i].endsWith("ie") || names[i].endsWith("y")) {
+                        name_count = name_count +1;
+                    }
+                    i = i + 1;
+                }
+ 
+                return name_count;
+             }
+        </script>
+
+    <br />
+    <br />
+
+        <script type="text/javascript">
+            var num;
+            var numr;
+            num = window.prompt("Enter a number to reverse: ");
+
+            document.write(('Your number reversed is: ') + (reverser(num)));
+
+            function reverser(num) {
+                var numr = num.toString().split('').reverse().join('');
+
+                return numr;
+            }
+        </script>
+</body>
+</html>
